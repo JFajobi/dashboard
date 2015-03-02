@@ -1,0 +1,29 @@
+<% content_for :title do %>My super sweet dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="welcome" data-view="Text" data-title="Breeze Bot Admin View" data-text="Welcome To Breeze Bot Live KPIs For #{<%= Date.today%>}." ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="attention" data-view="Number" data-title="Reservations Needing Attention"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fleet_utilized" data-view="Meter" data-title="Fleet Utilized" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fleet_size" data-view="Number" data-title="Fleet Size"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="current_members" data-view="Number" data-title="Current Members"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="new_members" data-view="Number" data-title="New Members This Week"></div>
+    </li>
+  </ul>
+
+</div>
